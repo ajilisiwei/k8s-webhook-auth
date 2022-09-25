@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Config
+clusters:
+  - name: k8s-webhook-auth
+    cluster:
+      server: "http://192.168.56.3:3000/authenticate"
+
+users:
+  - name: webhook-auth-api-server
+    user:
+      token: "secret"
+
+current-context: webhook
+contexts:
+- context:
+    cluster: k8s-webhook-auth
+    user: webhook-auth-api-server
+  name: webhook
