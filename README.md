@@ -4,8 +4,8 @@
 
 Webhook 身份认证是一种用来验证持有者令牌的回调机制。
 
-    - --authentication-token-webhook-config-file 指向一个配置文件， 其中描述如何访问远程的 Webhook 服务。
-    - --authentication-token-webhook-cache-ttl 用来设定身份认证决定的缓存时间。 默认时长为 2 分钟。
+    --authentication-token-webhook-config-file 指向一个配置文件， 其中描述如何访问远程的 Webhook 服务。
+    --authentication-token-webhook-cache-ttl 用来设定身份认证决定的缓存时间。 默认时长为 2 分钟。
 
 ### 创建 webhook 服务
 
